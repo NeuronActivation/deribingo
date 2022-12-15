@@ -1,0 +1,23 @@
+table, th, td {
+	border: 1px solid black;
+}
+
+.bingoentry {
+	min-width: 100px;
+	min-height: 100px;
+
+	max-width: 100px;
+	max-height: 100px;
+
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.crossed:after {
+    display: flex;
+    justify-content: center;
+
+    content: "\274c"; /* This will render the 'X' */
+    font-size: 50px;
+    color: #FFFF;
+}
