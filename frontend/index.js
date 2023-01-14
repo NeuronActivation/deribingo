@@ -1,6 +1,6 @@
 'use strict';
 
-const ws = new WebSocket("ws://" + location.hostname + ":3001");
+const ws = new WebSocket("ws://" + location.hostname + "/deribingo-ws");
 
 function sendMessage(json) {
     ws.send(JSON.stringify(json))

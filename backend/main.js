@@ -11,8 +11,7 @@ const wsPort = 3001;
 
 app.use(express.static(path.resolve("../frontend/")));
 
-const httpServer = http.createServer(app).listen(wsPort);
-const ws = new webSocket.Server({server: httpServer});
+const ws = new webSocket.Server({port: wsPort});
 
 let bingos = {}
 let connectionsInBingo = {}
